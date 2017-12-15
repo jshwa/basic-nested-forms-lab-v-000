@@ -1,6 +1,6 @@
 <%= form_for @recipe do |f| %>
   Title: <%= f.text_field :title %>
-  <%= f.field_for :ingredients do |i| %>
+  <%= f.fields_for :ingredients do |i| %>
   Ingredient 1: <%= i.text_field :ingredient_1 %>
   Ingredient 2: <%= i.text_field :ingredient_2 %>
   <% end %>
